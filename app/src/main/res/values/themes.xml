@@ -1,0 +1,29 @@
+<resources>
+    <style name="Theme.BLESerial" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.BLESerial.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ActivityThemeNoActionBar" parent="Theme.BLESerial.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ScanBLEDeviceActivityTheme" parent="Theme.BLESerial.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryScanActivity</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkScanActivity</item>
+        <item name="colorAccent">@color/colorAccentScanActivity</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
