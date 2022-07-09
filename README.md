@@ -46,7 +46,7 @@ Presing the Connect Button creates a connection with the esp32.
 <img src="https://github.com/hammad1201/Images/blob/main/Screenshot_20220709-140222_BLE_Serial.png" alt="Device Connected" width="250px" height="500px">
 
 ## Exchanging Messages
-Once Connected, then we can exchange text messages between iPhone and the esp32.
+Once Connected, then we can exchange text messages between Android App and the esp32.
 
 <img src="https://github.com/hammad1201/Images/blob/main/Screenshot_20220709-141308_BLE_Serial.png" alt="Exchanging Messages" width="250px" height="500px">
 
