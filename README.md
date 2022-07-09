@@ -13,7 +13,7 @@ CHARACTERISTIC_UUID_TX: "6E400003-B5A3-F393-E0A9-E50E24DCCA9E"
 # How to Run the App
 Clone the source code and open it in Android Studio. You'll need an android phone to run it. The emulator wont work with BLE.
 
-![Build Image](https://github.com/hammad1201/Images/blob/main/Screenshot%202021-10-21%20at%204.22.24%20PM.png)
+![Build Image](https://github.com/hammad1201/Images/blob/main/android_studio.png)
 
 # Esp32 Part
 Download or clone [this](https://github.com/hammad1201/NordicUARTExampleEsp32) repository and open the **Nordic_UART_Example.ino** file. Upload it to esp32 to start advertising.
@@ -26,39 +26,34 @@ Here are some screenshots of the app communication with esp32 using Nordic UART 
 ## Splash Screen
 This is the splash screen for the app.
 
-<img src="https://github.com/hammad1201/Images/blob/main/IMG_5085.PNG" alt="Splash Screen" width="250px" height="500px">
+<img src="https://github.com/hammad1201/Images/blob/main/Screenshot_20220709-140138_BLE_Serial.png" alt="Splash Screen" width="250px" height="500px">
 
 ## Scan Screen
 Press the scan button to start scanning for BLE Peripherals. Select a device to connect to it.
 
-<img src="https://github.com/hammad1201/Images/blob/main/IMG_5086.PNG" alt="Scan Screen" width="250px" height="500px">
+<img src="https://github.com/hammad1201/Images/blob/main/Screenshot_20220709-140202_BLE_Serial.png" alt="Scan Screen" width="250px" height="500px">
 
 ## Communication Terminal Screen
 Press the connect button to connect to the device.
 
-<img src="https://github.com/hammad1201/Images/blob/main/IMG_5087.PNG" alt="Communication Terminal Screen" width="250px" height="500px">
+<img src="https://github.com/hammad1201/Images/blob/main/Screenshot_20220709-140209_BLE_Serial.png" alt="Communication Terminal Screen" width="250px" height="500px">
 
 # Communication
 Presing the Connect Button creates a connection with the esp32.
 
 ## Device Connected
 
-<img src="https://github.com/hammad1201/Images/blob/main/IMG_5089.PNG" alt="Device Connected" width="250px" height="500px">
+<img src="https://github.com/hammad1201/Images/blob/main/Screenshot_20220709-140222_BLE_Serial.png" alt="Device Connected" width="250px" height="500px">
 
 ## Exchanging Messages
 Once Connected, then we can exchange text messages between iPhone and the esp32.
 
-<img src="https://github.com/hammad1201/Images/blob/main/IMG_5090.PNG" alt="Exchanging Messages" width="250px" height="500px">
+<img src="https://github.com/hammad1201/Images/blob/main/Screenshot_20220709-141308_BLE_Serial.png" alt="Exchanging Messages" width="250px" height="500px">
 
 ## Esp32 Data Received
 Here is a screenshot of the data received to the esp32, which is displayed on Serial monitor.
 
-![Esp32 Data Received](https://github.com/hammad1201/Images/blob/main/Screenshot%202021-10-21%20at%204.16.40%20PM.png)
-
-## Info
-This messages opens when the info button is presses on the top-right corner of the screen.
-
-<img src="https://github.com/hammad1201/Images/blob/main/IMG_5088.PNG" alt="Info" width="250px" height="500px">
+![Esp32 Data Received](https://github.com/hammad1201/Images/blob/main/Screenshot%202022-07-09%20at%202.23.03%20PM%20(2).png)
 
 # Contact me
 Name: Muhammad Hammad
