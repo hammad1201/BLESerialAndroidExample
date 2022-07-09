@@ -21,7 +21,7 @@ Download or clone [this](https://github.com/hammad1201/NordicUARTExampleEsp32) r
 ![Esp32 Arduino Code](https://github.com/hammad1201/Images/blob/main/Screenshot%202021-10-21%20at%205.07.55%20PM.png)
 
 # Screenshots
-Here are some screenshots of the iPhone communication with esp32 using Nordic UART Service.
+Here are some screenshots of the app communication with esp32 using Nordic UART Service.
 
 ## Splash Screen
 This is the splash screen for the app.
