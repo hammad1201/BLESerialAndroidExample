@@ -210,12 +210,15 @@ public class BluetoothAdapterService extends Service {
         boolean c = false;
         if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                Log.d(Constants.TAG, "connect: No Permission");
+                Log.d(TAG, "connect: No Permission");
 
             } else {
                 c = bluetoothGatt.readCharacteristic(gattChar);
             }
+        } else {
+            c = bluetoothGatt.readCharacteristic(gattChar);
         }
+
         return c;
     }
 
@@ -305,9 +308,6 @@ public class BluetoothAdapterService extends Service {
             descriptor.setValue(BluetoothGattDescriptor.DISABLE_NOTIFICATION_VALUE);
         }
 
-        Log.d(TAG, "request max MTU");
-        bluetoothGatt.requestMtu(512);  //Without this the esp32 is only able to receive maximum 20 bytes
-
         return bluetoothGatt.writeDescriptor(descriptor);
     }
 
@@ -359,6 +359,18 @@ public class BluetoothAdapterService extends Service {
             sendConsoleMessage("Services Discovered");
             Message msg = Message.obtain(activityHandler, GATT_SERVICES_DISCOVERED);
             msg.sendToTarget();
+
+            Log.d(TAG, "request max MTU");
+            if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    Log.d(TAG, "connect: No Permission");
+
+                } else {
+                    bluetoothGatt.requestMtu(512);  //Without this the esp32 is only able to receive maximum 20 bytes
+                }
+            } else {
+                bluetoothGatt.requestMtu(512);  //Without this the esp32 is only able to receive maximum 20 bytes
+            }
         }
 
         /**
